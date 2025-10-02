@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WhatsApp Share Pro • দ্রুত লিঙ্ক তৈরি</title>
-<style>
-:root{
-  --bg:#0f1724; --card:#0b1220; --accent:#25D366; --muted:#9aa4b2;
-}
-body{
-  margin:0; font-family:sans-serif; background:var(--bg); color:#e6eef8;
-  display:flex; justify-content:center; align-items:flex-start; min-height:100vh; padding:20px;
-}
-.container{max-width:900px; width:100%;}
-header{display:flex; align-items:center; gap:12px; margin-bottom:20px;}
-header h1{margin:0;font-size:22px;}
-header p{margin:2px 0 0;color:var(--muted);}
-.card{background:var(--card); border-radius:12px; padding:20px; box-shadow:0 6px 18px rgba(0,0,0,0.5);}
-label{display:block; margin:10px 0 4px; color:var(--muted);}
-input,textarea{width:100%; padding:10px; border-radius:8px; border:none; background:rgba(255,255,255,0.03); color:#e6eef8; font-size:14px;}
-textarea{resize:vertical; min-height:80px;}
-.btn{display:inline-flex; align-items:center; gap:6px; padding:10px 14px; border-radius:10px; border:none; background:var(--accent); color:#04201a; font-weight:600; cursor:pointer; margin-top:10px;}
-.btn.ghost{background:transparent; border:1px solid rgba(255,255,255,0.1); color:var(--muted);}
-.preview{background:rgba(255,255,255,0.03); padding:10px; border-radius:8px; font-family:monospace; margin-top:8px;}
-</style>
-</head>
-<body>
-<div class="container">
-<header>
-<h1>WhatsApp Share Pro</h1>
-<p>দ্রুত লিঙ্ক তৈরি, কপি ও ওপেন করুন WhatsApp-এ</p>
-</header>
-<div class="card">
-<label>Phone Number (Country Code ছাড়া)</label>
-<input id="phone" placeholder="88017XXXXXXX">
 <label>Message</label>
 <textarea id="message">হ্যালো! এখানে দেখুন: </textarea>
 <div>
 <button class="btn" id="generateBtn">Generate Link</button>
 <button class="btn ghost" id="copyBtn">Copy Link</button>
 <button class="btn ghost" id="openBtn">Open WhatsApp</button>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </div>
 <label>Preview</label>
 <div class="preview" id="preview">wa.me/...</div>
